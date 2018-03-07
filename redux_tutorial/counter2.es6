@@ -38,14 +38,10 @@ const render= () => {
          
          } 
         />,
-        document.getElementById('root');
+        document.getElementById('root')
     );
-}
+};
 
 store.subscribe(render);
 
 render();
-
-document.addEventListener('click',() => {
-    store.dispact({type: 'INCREMENT'});
-});
